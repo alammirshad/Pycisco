@@ -1,11 +1,11 @@
 int lo5
-ip address 5.5.5.5 255.255.255.255
+ip address 53.5.5.5 255.255.255.255
 exit
 int lo6
-ip address 6.6.6.6 255.255.255.255
+ip address 63.6.6.6 255.255.255.255
 exit
 int lo7
-ip address 7.7.7.7 255.255.255.255
+ip address 73.7.7.7 255.255.255.255
 exit
 
 
