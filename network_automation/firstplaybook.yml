@@ -1,0 +1,6 @@
+---
+ - hosts: csr 
+   tasks: 
+    - name: My First Playbook
+      ios_command:
+       commands: show version

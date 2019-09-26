@@ -1,0 +1,27 @@
+---
+ - hosts: all 
+   tasks: 
+    - name: My 2nd Playbook
+      ios_command:
+       commands: 
+        - show version
+        - show ip int br
+        - show run
+        - show clock
+
+    - name: ping google dnc
+      ios_command:
+       commands:
+        - show ip route
+      register: output
+    
+    - name: show normal output
+      debug: 
+       msg: "Hey, the output of above command is {{ output}}" 
+          
+    - name: execute me please
+      debug: 
+       msg: "hello world, this is me only please run me"
+      tags:
+       - anything    
+
